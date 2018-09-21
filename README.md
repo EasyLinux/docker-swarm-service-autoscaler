@@ -22,9 +22,9 @@ autoscale_rules:
     scale_down_threshold: 200
 ```
 
-## Running
+## Utilisation
 
-> This service must be run on a docker swarm manager node if the connection to docker daemon needs to be established via `/var/run/docker.sock`
+> Ce service doit fonctionner sur un manager Swarm si vous désirez vous connecter au travers du socket unix `/var/run/docker.sock`
 
 > You can alternatively pass docker host url via `DOCKER_HOST` environment variable. You can pass environment variable `DOCKER_TLS_VERIFY` to verify the host against a CA certificate and `DOCKER_CERT_PATH` for specifying
 path to a directory containing TLS certificates to use when connecting to the Docker host.
